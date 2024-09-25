@@ -1,0 +1,16 @@
+digraph Tree {
+node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<Glucose &le; 127.5<br/>entropy = 0.931<br/>samples = 614<br/>value = [401, 213]<br/>class = Outcome>, fillcolor="#f3c4a2"] ;
+1 [label=<Age &le; 28.5<br/>entropy = 0.712<br/>samples = 390<br/>value = [314, 76]<br/>class = Outcome>, fillcolor="#eb9f69"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<BMI &le; 30.95<br/>entropy = 0.391<br/>samples = 221<br/>value = [204, 17]<br/>class = Outcome>, fillcolor="#e78c49"] ;
+1 -> 2 ;
+3 [label=<Pedigree &le; 0.672<br/>entropy = 0.068<br/>samples = 124<br/>value = [123, 1]<br/>class = Outcome>, fillcolor="#e5823b"] ;
+2 -> 3 ;
+4 [label=<entropy = 0.0<br/>samples = 108<br/>value = [108, 0]<br/>class = Outcome>, fillcolor="#e58139"] ;
+3 -> 4 ;
+5 [label=<entropy = 0.337<br/>samples = 16<br/>value = [15, 1]<br/>class = Outcome>, fillcolor="#e78946"] ;
+3 -> 5 ;
+6 [label=<BloodPressure &le; 37.0<br/>entropy = 0.646<br/>samples = 97<br/>value = [81, 16]<br/>class = Outcome>, fillcolor="#ea9a60"] ;
+2 -> 6 ;
